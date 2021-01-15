@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolodex.Web", "Rolodex.Web\Rolodex.Web.csproj", "{9B340A53-2046-4C1A-A4E9-AE9D551EE39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolodex.Test", "Rolodex.Test\Rolodex.Test.csproj", "{01FE2EE2-A00C-4100-8F21-B271FE5E0183}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{7B3E5C7F-FAF1-4BD4-A34A-307A53DD273B}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B340A53-2046-4C1A-A4E9-AE9D551EE39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B340A53-2046-4C1A-A4E9-AE9D551EE39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B340A53-2046-4C1A-A4E9-AE9D551EE39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B340A53-2046-4C1A-A4E9-AE9D551EE39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FE2EE2-A00C-4100-8F21-B271FE5E0183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FE2EE2-A00C-4100-8F21-B271FE5E0183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FE2EE2-A00C-4100-8F21-B271FE5E0183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FE2EE2-A00C-4100-8F21-B271FE5E0183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD799F70-6726-4174-869B-7547741BBCC3}
+	EndGlobalSection
+EndGlobal
