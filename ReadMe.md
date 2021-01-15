@@ -2,7 +2,7 @@
 
 This is a very basic repo that has a dotnet WebAPI and xUnit test. Just an example of getting a simple project up and running with the goal of learning how to build an API and test the endpoint. 
 
-There is definitely more that needs to be taken care of to make this production ready so please just use this if you are just trying to find something to jumpstart learning ASP.Net Core 5.0.
+Granted I'm not really a fan of logic in controllers or testing controllers in general so this is not how I would construct a production app. There is definitely more that needs to be taken care of to make this production ready so please just use this if you are just trying to find something to jumpstart learning ASP.Net Core 5.0.
 
 # Learning Resources
 
