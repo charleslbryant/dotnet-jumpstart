@@ -34,6 +34,13 @@ namespace Rolodex.Web.Controllers
             return _contacts;
         }
 
+        public IActionResult GetContactById(string id)
+        {
+            var contact = _contacts.Where(x => x.Email == id)?.FirstOrDefault();
+            var result = new OkObjectResult(contact);
+            return result;
+        }
+
 
         // Here we are just loading the contacts list with dummy contacts in a loop that iterates "count" times.
         private List<Contact> LoadContacts(int count)

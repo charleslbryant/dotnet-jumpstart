@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Rolodex.Web;
 using Rolodex.Web.Controllers;
 using Rolodex.Web.Models;
@@ -31,11 +32,13 @@ namespace Rolodex.Test
             var result = _sut.GetContact(email);
 
             // We get the actual contact from the result
-            Contact actual = result.Value;
+            Contact value = result.Value;
+
+            var actual = value.FirstName;
 
             // We assert that we see the correct First Name
             // This isn't a good test, but since this is still pretty basic it is OK
-            Assert.Equal(expected, actual.FirstName);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -48,6 +51,24 @@ namespace Rolodex.Test
             IEnumerable<Contact> actual = result.Value;
 
             Assert.Equal(expected, actual.Count());
+        }
+
+        [Fact]
+        public void GetContactById()
+        {
+            var id = "test1@test1.com";
+            var expected = "TestFirstName1";
+
+            var result = _sut.GetContactById(id);
+
+            var okObjectResult = result as OkObjectResult;
+            Assert.NotNull(okObjectResult);
+
+            var model = okObjectResult.Value as Contact;
+            Assert.NotNull(model);
+
+            var actual = model.FirstName;
+            Assert.Equal(expected, actual);
         }
     }
 }
