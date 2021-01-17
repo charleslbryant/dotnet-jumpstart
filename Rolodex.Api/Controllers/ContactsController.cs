@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Rolodex.Web.Models;
+using Rolodex.Api.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rolodex.Web.Controllers
+namespace Rolodex.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -34,9 +34,10 @@ namespace Rolodex.Web.Controllers
             return _contacts;
         }
 
-        public IActionResult GetContactById(string id)
+        [HttpGet("{id}", Name = "GetContactById")]
+        public IActionResult GetContactById(int id)
         {
-            var contact = _contacts.Where(x => x.Email == id)?.FirstOrDefault();
+            var contact = _contacts.Where(x => x.Id == id)?.FirstOrDefault();
             var result = new OkObjectResult(contact);
             return result;
         }
@@ -51,6 +52,7 @@ namespace Rolodex.Web.Controllers
             {
                 var contact = new Contact
                 {
+                    Id = i,
                     FirstName = $"TestFirstName{i}",
                     LastName = $"TestLastName{i}",
                     Email = $"test{i}@test{i}.com"

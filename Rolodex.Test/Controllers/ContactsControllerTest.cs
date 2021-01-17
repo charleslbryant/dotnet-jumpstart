@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Rolodex.Web;
-using Rolodex.Web.Controllers;
-using Rolodex.Web.Models;
+using Rolodex.Api;
+using Rolodex.Api.Controllers;
+using Rolodex.Api.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,7 +56,7 @@ namespace Rolodex.Test
         [Fact]
         public void GetContactById()
         {
-            var id = "test1@test1.com";
+            var id = 1;
             var expected = "TestFirstName1";
 
             var result = _sut.GetContactById(id);

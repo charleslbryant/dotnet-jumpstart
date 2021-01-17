@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rolodex.Web\Rolodex.Web.csproj" />
+    <ProjectReference Include="..\Rolodex.Api\Rolodex.Api.csproj" />
   </ItemGroup>
 
 </Project>
