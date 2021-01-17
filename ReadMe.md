@@ -4,6 +4,23 @@ This is a very basic repo that has a dotnet WebAPI and xUnit test. Just an examp
 
 Granted I'm not really a fan of logic in controllers or testing controllers in general so this is not how I would construct a production app. There is definitely more that needs to be taken care of to make this production ready so please just use this if you are just trying to find something to jumpstart learning ASP.Net Core 5.0.
 
+# Getting Started
+
+1. Clone repository - https://github.com/charleslbryant/dotnet-jumpstart.git.
+```
+git clone https://github.com/charleslbryant/dotnet-jumpstart.git 
+```
+2. Change to the Rolodex.Api directory, which is inside of the folder created by the clone.
+```
+cd Rolodex.Api
+```
+3. Run project.
+```
+dotnet run
+```
+4. Open https://localhost:5001/swagger/index.html to test out the API is Swagger.
+   
+
 # Learning Resources
 
 ## Learn ASP.NET
@@ -52,6 +69,6 @@ https://stackoverflow.com/
 Postman is a nice tool for testing APIs. This is how it can be used with test scripts to test endpoints.
 https://learning.postman.com/docs/writing-scripts/script-references/test-examples/
 
-# Docs
+# Changes
 
 * [Acessing Data from OkObjectResult](Accessing-data-from-OkObjectResult.md)
